@@ -452,7 +452,7 @@
         self.errorDetail  = [error localizedDescription];
         [delegate performSelector:action withObject:self withObject:nil];
     }
-    [self autorelease];
+//    [self autorelease];
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
@@ -473,7 +473,7 @@
 {
     hasError = true;
     [self authError];
-    [self autorelease];
+//    [self autorelease];
 }
 
 - (void)URLConnectionDidFinishLoading:(NSString*)content
@@ -544,7 +544,8 @@
     [delegate performSelector:action withObject:self withObject:obj];
     
   out:
-    [self autorelease];
+    return;
+//  [self autorelease];
 }
 
 - (void)alert
