@@ -296,12 +296,12 @@
 	[super get:[self getURL:path queryParameters:params]];
 }
 
-- (void)getUser:(int)userId
+- (void)getUser:(NSString*)userId
 {
 	needAuth = YES;
     NSString *path = [NSString stringWithFormat:@"users/show.%@", API_FORMAT];
 	NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
-	[params setObject:[NSString stringWithFormat:@"%d", userId] forKey:@"user_id"];
+	[params setObject:[NSString stringWithFormat:@"%@", userId] forKey:@"user_id"];
 	[super get:[self getURL:path queryParameters:params]];
 }
 

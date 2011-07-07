@@ -63,7 +63,7 @@ typedef enum {
 			  cursor:(int)cursor 
 			   count:(int)count;
 
-- (void)getUser:(int)userId;
+- (void)getUser:(NSString*)userId;
 
 - (void)getUserByScreenName:(NSString *)screenName;
 
