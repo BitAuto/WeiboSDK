@@ -19,6 +19,16 @@
 @synthesize hasError;
 @synthesize errorMessage;
 @synthesize errorDetail;
+@synthesize tag;
+
+- (id)initWithTarget:(id)aDelegate engine:(OAuthEngine *)__engine action:(SEL)anAction tag:(int)_tag
+{
+    [super initWithDelegate:aDelegate engine:__engine];
+    tag = _tag;
+    action = anAction;
+    hasError = false;
+    return self;
+}
 
 - (id)initWithTarget:(id)aDelegate engine:(OAuthEngine *)__engine action:(SEL)anAction
 {
