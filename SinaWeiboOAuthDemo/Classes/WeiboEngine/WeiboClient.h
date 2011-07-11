@@ -23,6 +23,7 @@ typedef enum {
     BOOL        hasError;
     NSString*   errorMessage;
     NSString*   errorDetail;
+    int tag;
 
     BOOL _secureConnection;
 }
@@ -32,6 +33,9 @@ typedef enum {
 @property(nonatomic, assign) BOOL hasError;
 @property(nonatomic, copy) NSString* errorMessage;
 @property(nonatomic, copy) NSString* errorDetail;
+@property(nonatomic, assign) int tag;
+
+- (id)initWithTarget:(id)aDelegate engine:(OAuthEngine *)__engine action:(SEL)anAction tag:(int)_tag;
 
 - (id)initWithTarget:(id)aDelegate engine:(OAuthEngine *)__engine action:(SEL)anAction;
 
