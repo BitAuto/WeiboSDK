@@ -8,10 +8,9 @@
 
 #import "RootViewController.h"
 
-//#define kOAuthConsumerKey				@"3983859935"		//REPLACE ME
-//#define kOAuthConsumerSecret			@"201fea7b1e1203a76a10f3be570f5abb"		//REPLACE ME
-#define kOAuthConsumerKey				@"3047558914"
-#define kOAuthConsumerSecret			@"63436fcd78615c49d8acc147a77d6452"
+#define kOAuthConsumerKey				@"3983859935"		//REPLACE ME
+#define kOAuthConsumerSecret			@"201fea7b1e1203a76a10f3be570f5abb"		//REPLACE ME
+
 
 @interface RootViewController (Private)
 
