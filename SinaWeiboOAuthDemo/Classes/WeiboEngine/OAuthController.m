@@ -125,7 +125,7 @@
 	frame.origin.y = 44;
 	frame.size.height -= 44;
 	_webView = [[UIWebView alloc] initWithFrame: ApplicationFrame(self.orientation)];
-	_webView.alpha = 0.0;
+	_webView.alpha = 1.0;
 	_webView.delegate = self;
 	//_webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	if ([_webView respondsToSelector: @selector(setDetectsPhoneNumbers:)]) [(id) _webView setDetectsPhoneNumbers: NO];
