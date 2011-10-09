@@ -332,7 +332,7 @@
 		[self denied];
 		return NO;
 	}
-	if (navigationType != UIWebViewNavigationTypeOther) _webView.alpha = 0.1;
+//	if (navigationType != UIWebViewNavigationTypeOther) _webView.alpha = 0.1;
 	return YES;
 }
 
